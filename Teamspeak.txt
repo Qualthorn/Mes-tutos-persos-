@@ -1,0 +1,30 @@
+Création d'un Serveur Teamspeak :
+
+Pour créer un serveur Teamspeak il vous faut en premier lieu vous connecter à votre machine, pour ce faire connectez vous avec Putty ou Termius et loguez-vous avec vos identifiants root pour avoir tous les accès sans restrictions. 
+Et pour finir suivez chaque étapes ci-dessous : 
+
+- Créez un utilisateur, pour ce faire tapez la commande : 
+   ➥ adduser {nom du user} (exemple: adduser ts3server)
+
+- Se connecter sur l'utilisateur créé auparavant, pour ce faire tapez la commande suivante :
+   ➥ su {nom de l'utilisateur}
+
+- Ensuite téléchargez la version du serveur Teamspeak, pour ce faire tapez la commande suivante : 
+   ➥ wget {lien de la version de votre serveur teamspeak}
+
+- En suivant il vous faudra dézipper le fichier qui fini par ".bz2" pour ce faire tapez la commande suivante : 
+   ➥ tar xvjf t (faites tab pour voir tous les fichiers et sélectionner celui qui fini par ".bz2")
+
+- Maintenant qu'il est dézippé, il vous faut le supprimer, pour ce faire utilisez la commande suivante : 
+   ➥ rm t (faites plusieurs fois tab pour séléctionner le bon fichier ps: je rappelle qu'il doit se finir par ".bz2")
+
+- Après avoir fait chacune de ces étapes, il est temps de le démarrer et pour ce faire il faut aller dans le dossier ou le Serveur TeamSpeak est installé, pour ça tapez :
+   ➥ cd /home/ (après le "/" mettez la première lettre de votre dossier donc là mettez "t" et faites tab)
+
+- Maintenant vous pouvez enfin le démarrer, tout simplement en faisant :
+   ➥ ./ts3server_startscript.sh start license_accepted=1
+- AVERTISSEMENT: BIEN COPIER LES INFORMATIONS QUI VONT APPARAÎTRE!!!
+
+PS: Si votre serveur TeamSpeak se ferme à la déconnexion de votre utilisateur, relancez le avec la commande suivantes : ./ts3server_startscript.sh start
+
+Voilà Voilà, vous pouvez maintenant vous déconnecter de l'utilisateur en faisant [CTRL] A + D  et profitez de votre Serveur TeamSpeak.
